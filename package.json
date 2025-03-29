@@ -1,0 +1,23 @@
+{
+	"name": "huddle-landing-page-with-curved-sections",
+	"version": "1.0.0",
+	"description": "Huddle landing page with curved sections",
+	"main": "index.html",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@types/react": "^19.0.12",
+		"@types/react-dom": "^19.0.4",
+		"@vitejs/plugin-react": "^4.3.4",
+		"typescript": "^5.8.2",
+		"vite": "^6.2.3"
+	},
+	"dependencies": {
+		"react": "^19.1.0",
+		"react-dom": "^19.1.0"
+	}
+}
