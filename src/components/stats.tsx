@@ -12,8 +12,8 @@ function Stat({ icon, info, title }: StatProps) {
 		<div>
 			<img src={icon} alt="" />
 			<div>
-				<span>{info}</span>
-				<span>{title}</span>
+				<span className="u-text-display u-fw-700">{info}</span>
+				<span className="u-text-caption">{title}</span>
 			</div>
 		</div>
 	);
@@ -22,7 +22,7 @@ function Stat({ icon, info, title }: StatProps) {
 export default function Stats() {
 	return (
 		<div>
-			<h2>Stats</h2>
+			<h2 className="u-visually-hidden">Stats</h2>
 			<Stat icon={communitiesIcon} info="1.4k+" title="Communities Formed" />
 			<Stat icon={messagesIcon} info="2.7m+" title="Messages Sent" />
 		</div>

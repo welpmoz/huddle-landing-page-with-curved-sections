@@ -6,7 +6,8 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"build": "vite build"
+		"build": "vite build",
+		"styles": "sass ./src/scss/styles.scss ./src/styles.css --watch --style=compressed"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",

@@ -11,10 +11,10 @@ interface BenefitProps {
 function Benefit({ icon, title, description }: BenefitProps) {
 	return (
 		<div>
-			<img src={icon} alt="" style={{ maxInlineSize: "100%" }} />
+			<img src={icon} alt="" />
 			<div>
-				<h3>{title}</h3>
-				<p>{description}</p>
+				<h3 className="u-text-heading-3 u-fw-700">{title}</h3>
+				<p className="u-text-body-2">{description}</p>
 			</div>
 		</div>
 	);
@@ -23,7 +23,7 @@ function Benefit({ icon, title, description }: BenefitProps) {
 export default function Benefits() {
 	return (
 		<div>
-			<h2>Benefits</h2>
+			<h2 className="u-visually-hidden">Benefits</h2>
 			<Benefit
 				description="Grow Together Generate meaningful discussions with your audience and
 				build a strong, loyal community. Think of the insightful conversations

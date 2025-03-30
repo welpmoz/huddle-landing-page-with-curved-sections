@@ -8,7 +8,14 @@ export default function Main() {
 			<Hero />
 			<Stats />
 			<Benefits />
-			<div>Ready To Build Your Community? Get Started For Free</div>
+			<div>
+				<span className="u-text-action u-fw-700">
+					Ready To Build Your Community?
+				</span>
+				<button type="button" className="u-text-button u-fw-700">
+					Get Started For Free
+				</button>
+			</div>
 		</main>
 	);
 }

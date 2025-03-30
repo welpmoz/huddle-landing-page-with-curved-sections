@@ -9,11 +9,11 @@ export default function Footer() {
 			<NewsletterForm />
 			<div>
 				<img src={logoImg} alt="Huddle" />
-				<p>
+				<p className="u-text-body-form u-fw-600">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla
 					quam, hendrerit lacinia vestibulum a, ultrices quis sem.
 				</p>
-				<div>
+				<div className="u-text-body-form">
 					<div>
 						<img src={phoneIcon} alt="" /> Phone: +1-543-123-4567
 					</div>
