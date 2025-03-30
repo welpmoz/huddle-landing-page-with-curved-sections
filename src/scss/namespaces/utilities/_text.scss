@@ -1,0 +1,99 @@
+@mixin text-open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+}
+
+@mixin text-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.u-text-button-link {
+  @include text-open-sans();
+  font-size: 0.94rem;
+  letter-spacing: 0rem;
+}
+
+.u-text-heading-1 {
+  @include text-poppins();
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  letter-spacing: 0rem;
+}
+
+.u-text-body {
+  @include text-open-sans();
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  letter-spacing: 0rem;
+}
+
+.u-text-button {
+  @include text-open-sans();
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  letter-spacing: 0rem;
+}
+
+.u-text-caption {
+  @include text-open-sans();
+  font-size: 1.52rem;
+  line-height: 2.3rem;
+  letter-spacing: 0rem;
+}
+
+.u-text-heading-3 {
+  @include text-poppins();
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 0rem;
+}
+
+.u-text-heading-4 {
+  @include text-open-sans();
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 0rem;
+}
+
+.u-text-button-form {
+  @include text-open-sans();
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: 0rem;
+}
+
+.u-text-display {
+  @include text-open-sans();
+  font-size: 6.01rem;
+  line-height: 9.14rem;
+  letter-spacing: 0rem;
+}
+
+.u-text-body-form {
+  @include text-open-sans();
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  letter-spacing: 0rem;
+}
+
+.u-text-body-2 {
+  @include text-open-sans();
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  letter-spacing: 0rem;
+}
+
+.u-text-action {
+  @include text-poppins();
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  letter-spacing: 0rem;
+}
+
+.u-text-error {
+  @include text-open-sans();
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0rem;
+}
