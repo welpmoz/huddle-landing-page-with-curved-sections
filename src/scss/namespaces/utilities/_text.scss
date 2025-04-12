@@ -1,3 +1,5 @@
+@use "../../functions" as f;
+
 @mixin text-open-sans {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -12,6 +14,10 @@
   @include text-open-sans();
   font-size: 0.94rem;
   letter-spacing: 0rem;
+
+  @include f.breakpoint("large") {
+    font-size: 1.6rem;
+  }
 }
 
 .u-text-heading-1 {
@@ -19,6 +25,11 @@
   font-size: 2.4rem;
   line-height: 3.6rem;
   letter-spacing: 0rem;
+
+  @include f.breakpoint("large") {
+    font-size: 4.8rem;
+    line-height: 7.2rem;
+  }
 }
 
 .u-text-body {
@@ -26,6 +37,11 @@
   font-size: 1.4rem;
   line-height: 2.1rem;
   letter-spacing: 0rem;
+
+  @include f.breakpoint("large") {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
 }
 
 .u-text-button {
@@ -33,6 +49,11 @@
   font-size: 1.2rem;
   line-height: 1.8rem;
   letter-spacing: 0rem;
+
+  @include f.breakpoint("large") {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
 }
 
 .u-text-caption {
@@ -40,6 +61,11 @@
   font-size: 1.52rem;
   line-height: 2.3rem;
   letter-spacing: 0rem;
+
+  @include f.breakpoint("large") {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  }
 }
 
 .u-text-heading-3 {
@@ -47,6 +73,11 @@
   font-size: 2rem;
   line-height: 3rem;
   letter-spacing: 0rem;
+
+  @include f.breakpoint("large") {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
 }
 
 .u-text-heading-4 {
@@ -54,6 +85,11 @@
   font-size: 2rem;
   line-height: 3rem;
   letter-spacing: 0rem;
+
+  @include f.breakpoint("large") {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  }
 }
 
 .u-text-button-form {
@@ -68,6 +104,11 @@
   font-size: 6.01rem;
   line-height: 9.14rem;
   letter-spacing: 0rem;
+
+  @include f.breakpoint("large") {
+    font-size: 9.6rem;
+    line-height: 14.4rem;
+  }
 }
 
 .u-text-body-form {
@@ -75,6 +116,10 @@
   font-size: 1.4rem;
   line-height: 2.4rem;
   letter-spacing: 0rem;
+
+  @include f.breakpoint("large") {
+    font-size: 1.6rem;
+  }
 }
 
 .u-text-body-2 {
@@ -82,6 +127,11 @@
   font-size: 1.4rem;
   line-height: 2.1rem;
   letter-spacing: 0rem;
+
+  @include f.breakpoint("large") {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
 }
 
 .u-text-action {
@@ -89,6 +139,11 @@
   font-size: 2.4rem;
   line-height: 3.6rem;
   letter-spacing: 0rem;
+
+  @include f.breakpoint("large") {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
 }
 
 .u-text-error {

@@ -1,0 +1,94 @@
+@use "../../functions" as f;
+
+.c-benefit {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+
+  &[data-variant="decorated"] {
+    background-color: var(--very-pale-blue);
+
+    &[data-bg-number="one"] {
+      &::before {
+        content: "";
+        display: block;
+        margin-top: 11.2rem;
+        height: 11.2rem;
+        background: var(--white) url("./images/bg-section-top-mobile-1.svg")
+          bottom/contain repeat-x;
+
+        @include f.breakpoint("large") {
+          height: 16.5rem;
+          background-image: url("./images/bg-section-top-desktop-1.svg");
+        }
+      }
+
+      &::after {
+        content: "";
+        margin-bottom: 5.2rem;
+        display: block;
+        height: 5.2rem;
+        background: var(--white) url("./images/bg-section-bottom-mobile-1.svg")
+          bottom/contain repeat-x;
+
+        @include f.breakpoint("large") {
+          height: 13.9rem;
+          background-image: url("./images/bg-section-bottom-desktop-1.svg");
+        }
+      }
+    }
+
+    &[data-bg-number="two"] {
+      &::before {
+        content: "";
+        margin-top: 10.3rem;
+        display: block;
+        height: 10.3rem;
+        background: var(--white) url("./images/bg-section-top-mobile-2.svg")
+          bottom/contain repeat-x;
+
+        @include f.breakpoint("large") {
+          height: 15.6rem;
+          background-image: url("./images/bg-section-top-desktop-2.svg");
+        }
+      }
+
+      &::after {
+        content: "";
+        margin-bottom: 10.1rem;
+        display: block;
+        height: 10.1rem;
+        background: var(--white) url("./images/bg-section-bottom-mobile-2.svg")
+          bottom/contain repeat-x;
+
+        @include f.breakpoint("large") {
+          height: 13.9rem;
+          background-image: url("./images/bg-section-bottom-desktop-2.svg");
+        }
+      }
+    }
+  }
+
+  &[data-variant="default"] {
+    background-color: var(--white);
+  }
+
+  &__content {
+    max-width: 64ch;
+    margin: 0 auto;
+
+    @include f.breakpoint("large") {
+      max-width: 118rem;
+      display: flex;
+      align-items: center;
+      gap: 13.3rem;
+
+      &[data-layout="image-last"] {
+        flex-direction: row-reverse;
+      }
+
+      &[data-layout="image-first"] {
+        flex-direction: row;
+      }
+    }
+  }
+}

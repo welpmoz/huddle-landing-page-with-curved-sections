@@ -1,6 +1,7 @@
 import Stats from "./stats";
 import Hero from "./hero";
 import Benefits from "./benefits";
+import Button from "./button";
 
 export default function Main() {
 	return (
@@ -8,13 +9,13 @@ export default function Main() {
 			<Hero />
 			<Stats />
 			<Benefits />
-			<div>
+			<div className="l-main__involved u-text-align:center">
 				<span className="u-text-action u-fw-700">
 					Ready To Build Your Community?
 				</span>
-				<button type="button" className="u-text-button u-fw-700">
+				<Button type="button" variant="default">
 					Get Started For Free
-				</button>
+				</Button>
 			</div>
 		</main>
 	);

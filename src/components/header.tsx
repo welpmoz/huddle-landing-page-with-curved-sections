@@ -1,12 +1,15 @@
-import logoIcon from "../images/logo.svg";
+import Button from "./button";
+import Logo from "./logo";
 
 export default function Header() {
 	return (
-		<header>
-			<img src={logoIcon} alt="Hudde Icon" />
-			<button type="button" className="u-text-button-link">
-				Try It Free
-			</button>
+		<header className="l-header__fit">
+			<div className="c-header">
+				<Logo size="normal" />
+				<Button type="button" variant="link">
+					Try It Free
+				</Button>
+			</div>
 		</header>
 	);
 }

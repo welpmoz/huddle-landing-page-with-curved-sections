@@ -1,0 +1,29 @@
+@use "../../functions" as f;
+
+.c-newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+
+  @include f.breakpoint("large") {
+    gap: 4rem;
+  }
+
+  &__control {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  &__input {
+    &[type="text"] {
+      padding: 0.95rem 1.6rem;
+      border-radius: 0.6rem;
+      border: 0.1rem solid var(--white);
+
+      @include f.breakpoint("large") {
+        width: 32rem;
+      }
+    }
+  }
+}

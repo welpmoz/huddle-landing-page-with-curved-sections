@@ -1,0 +1,19 @@
+@use "../../functions" as f;
+
+.c-logo {
+  &[data-size="normal"] {
+    @include f.breakpoint("large") {
+      width: 24rem;
+      height: 3.8rem;
+    }
+  }
+
+  &[data-size="large"] {
+    filter: brightness(0) invert(1);
+
+    @include f.breakpoint("large") {
+      width: 24rem;
+      height: 3.8rem;
+    }
+  }
+}

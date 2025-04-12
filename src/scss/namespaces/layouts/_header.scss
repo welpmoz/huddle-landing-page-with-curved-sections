@@ -1,0 +1,16 @@
+@use "../../functions" as f;
+
+.l-header {
+  &__fit {
+    max-width: 32.7rem;
+    margin: 0 auto;
+
+    @include f.breakpoint("medium") {
+      max-width: 40rem;
+    }
+
+    @include f.breakpoint("large") {
+      max-width: 129.7rem;
+    }
+  }
+}

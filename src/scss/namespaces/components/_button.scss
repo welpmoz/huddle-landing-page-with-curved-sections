@@ -1,0 +1,47 @@
+@use "../utilities";
+
+.c-button {
+  cursor: pointer;
+
+  &[data-variant="default"] {
+    @extend .u-text-button, .u-fw-700;
+    padding: 0.92em 3.33em;
+    border-radius: 1.67em;
+    border: none;
+    background-color: var(--pink);
+    color: var(--white);
+
+    &:hover {
+      background-color: var(--light-pink);
+    }
+  }
+
+  &[data-variant="link"] {
+    @extend .u-text-button-link;
+    padding: 0.56em 1.9em 0.55em 1.94em;
+    background-color: var(--white);
+    border: 0.06rem solid var(--pink);
+    color: var(--pink);
+    border-radius: 1.3em;
+    box-shadow: 0rem 0rem 0.53em hsla(322, 100%, 66%, 0.22);
+
+    &:hover {
+      box-shadow: 0rem 0rem 0.56em hsla(322, 100%, 66%, 0.22);
+      color: var(--light-pink);
+      border-color: var(--light-pink);
+    }
+  }
+
+  &[data-variant="form"] {
+    @extend .u-text-button-form, .u-fw-700;
+    padding: 1.2rem 4.1rem;
+    background-color: var(--pink);
+    color: var(--white);
+    border-radius: 0.5rem;
+    border: none;
+
+    &:hover {
+      background-color: var(--light-pink);
+    }
+  }
+}

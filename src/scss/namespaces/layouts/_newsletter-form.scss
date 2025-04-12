@@ -1,0 +1,27 @@
+@use "../../functions" as f;
+
+.l-newsletter-form {
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    &-fit {
+      @include f.breakpoint("large") {
+        max-width: 80ch;
+      }
+    }
+  }
+
+  &__interaction {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    @include f.breakpoint("large") {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 4rem;
+    }
+  }
+}

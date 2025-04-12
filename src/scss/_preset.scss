@@ -6,10 +6,17 @@
   margin: 0rem;
 }
 
-
 img {
   max-inline-size: 100%;
   block-size: auto;
+}
+
+picture {
+  display: flex;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 :root {

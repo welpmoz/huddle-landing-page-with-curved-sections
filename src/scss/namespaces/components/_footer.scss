@@ -1,0 +1,88 @@
+@use "../../functions" as f;
+
+.c-footer {
+  background-color: var(--very-dark-cyan);
+  padding-bottom: 4.6rem;
+
+  @include f.breakpoint("medium") {
+    padding-bottom: 7rem;
+  }
+
+  @include f.breakpoint("large") {
+    padding-bottom: 10.3rem;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    height: 5.3rem;
+    background: url("./images/bg-footer-top-mobile.svg") repeat-x;
+    background-size: cover;
+    background-position: bottom;
+    background-color: var(--white);
+
+    @include f.breakpoint("medium") {
+      background-image: url("./images/bg-footer-top-desktop.svg");
+      height: 15.8rem;
+    }
+  }
+
+  &__content {
+    max-width: 32rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10.4rem;
+    padding-top: 7rem;
+
+    @include f.breakpoint("medium") {
+      padding-top: 10rem;
+    }
+
+    @include f.breakpoint("large") {
+      max-width: 120rem;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      padding-top: 13.1rem;
+    }
+  }
+
+  &__contact-section {
+    @include f.breakpoint("large") {
+      width: 70ch;
+    }
+  }
+
+  &__newsletter-form {
+    @include f.breakpoint("large") {
+      width: 52rem;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  &__contact-item {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+  }
+
+  &__social-links {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+
+    a {
+      color: var(--white);
+      font-size: 3.6rem;
+
+      &:hover {
+        color: var(--blue);
+      }
+    }
+  }
+}

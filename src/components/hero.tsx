@@ -1,23 +1,24 @@
 import screenMockupsImg from "../images/screen-mockups.svg";
+import Button from "./button";
 
 export default function Hero() {
 	return (
-		<div>
-			<div>
-				<h1 className="u-text-heading-1 u-fw-700">
+		<div className="l-hero__fit">
+			<div className="c-hero u-text-align:center">
+				<h1 className="u-text-heading-1 u-fw-700 u-fc-dark-cyan">
 					Build The Community Your Fans Will Love
-				</h1>{" "}
-				<p className="u-text-body">
-					Huddle re-imagines the way we build communities. You have a voice, but
-					so does your audience. Create connections with your users as you
-					engage in genuine discussion.
-				</p>
-			</div>
-			<div>
-				<button type="button" className="u-text-button u-fw-700">
-					Get Started For Free
-				</button>
-				<img src={screenMockupsImg} alt="Mockups" />
+				</h1>
+				<div className="l-hero__middle">
+					<p className="u-text-body u-fc-dark-cyan">
+						Huddle re-imagines the way we build communities. You have a voice,
+						but so does your audience. Create connections with your users as you
+						engage in genuine discussion.
+					</p>
+					<Button type="button" variant="default">
+						Get Started For Free
+					</Button>
+				</div>
+				<img src={screenMockupsImg} alt="Mockups for screens" />
 			</div>
 		</div>
 	);
